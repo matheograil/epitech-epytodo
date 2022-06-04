@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    ports:
+      - 3000:3000
+    environment:
+      - MYSQL_HOST=database
+  database:
+    image: mysql:latest
+    platform: linux/amd64
+    ports:
+      - 3306:3306
+    volumes:
+      - ./:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
