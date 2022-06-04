@@ -44,10 +44,10 @@ You can change global variables in this file : _.env_.
 
 | Variable name       | Description               |
 |---------------------|---------------------------|
-| MYSQL_HOST          | IP of Database            |
-| MYSQL_USER          | User of Database          |
-| MYSQL_DATABASE      | Name of Database          |
-| MYSQL_ROOT_PASSWORD | Root password of Database |
+| MYSQL_HOST          | Database IP               |
+| MYSQL_USER          | Database user             |
+| MYSQL_DATABASE      | Database name             |
+| MYSQL_ROOT_PASSWORD | Database root password    |
 | SECRET              | String that encrypts JWT  |
 
 
